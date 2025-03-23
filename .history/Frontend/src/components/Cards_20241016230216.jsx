@@ -7,7 +7,7 @@ function Cards({ item }) {
       <div className="mt-4 my-3 p-3">
         <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
           <figure>
-            <img src={item.image} alt="Books" />
+            <img src="https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183" alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">

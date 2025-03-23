@@ -75,11 +75,11 @@ function Freebook() {
         </div>
 
         <div>
-        <Slider {...settings}>
-        {filterData.map((item) => (
+          <Slider {...settings}>
+            {book.map((item) => (
               <Cards item={item} key={item.id} />
             ))}
-    </Slider>
+          </Slider>
         </div>
       </div>
     </>

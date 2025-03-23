@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Backend/model/book.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1729109158819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1729245936172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,11 @@\n     title: String,\r\n });\r\n const Book = mongoose.model(\"Book\", bookSchema);\r\n \r\n+const course = mongoose.Schema({\r\n+    course: String,\r\n+    books: bookSchema\r\n+});\r\n+const courseData = mongoose.model(\"couseData\", course );\r\n+\r\n export default Book;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742755655784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,6 @@\n     title: String,\r\n });\r\n const Book = mongoose.model(\"Book\", bookSchema);\r\n \r\n-const course = mongoose.Schema({\r\n-    course: String,\r\n-    books: bookSchema\r\n-});\r\n-const courseData = mongoose.model(\"couseData\", course );\r\n \r\n export default Book;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1729109158819,
+            "name": "Commit-0",
+            "content": "import mongoose from \"mongoose\";\r\n\r\nconst bookSchema = mongoose.Schema({\r\n    name: String,\r\n    price: Number,\r\n    category: String,\r\n    image: String,\r\n    title: String,\r\n});\r\nconst Book = mongoose.model(\"Book\", bookSchema);\r\n\r\nexport default Book;"
+        }
+    ]
+}

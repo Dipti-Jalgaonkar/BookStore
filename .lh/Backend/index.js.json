@@ -1,0 +1,46 @@
+{
+    "sourceFile": "Backend/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1729245585716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742755737987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,9 @@\n const app = express();\r\n \r\n app.use(cors());\r\n app.use(express.json());\r\n-app.use ((req, res)=> {\r\n-    res.send(\"HEllo\");\r\n-});\r\n+app.use ();\r\n \r\n dotenv.config();\r\n \r\n const PORT = process.env.PORT || 4000;\r\n@@ -33,8 +31,12 @@\n \r\n // defining routes\r\n app.use(\"/book\", bookRoute);\r\n app.use(\"/user\", userRoute);\r\n+app.post(\"/courseData\", async (req, res)=> {\r\n+    const course = await(book.findOne(book));\r\n+    })\r\n \r\n+\r\n app.listen(PORT, () => {\r\n     console.log(`Server is listening on port ${PORT}`);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742755756855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n app.use(\"/book\", bookRoute);\r\n app.use(\"/user\", userRoute);\r\n app.post(\"/courseData\", async (req, res)=> {\r\n     const course = await(book.findOne(book));\r\n-    })\r\n+    });\r\n \r\n \r\n app.listen(PORT, () => {\r\n     console.log(`Server is listening on port ${PORT}`);\r\n"
+                },
+                {
+                    "date": 1742755774958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,10 @@\n \r\n // defining routes\r\n app.use(\"/book\", bookRoute);\r\n app.use(\"/user\", userRoute);\r\n-app.post(\"/courseData\", async (req, res)=> {\r\n-    const course = await(book.findOne(book));\r\n-    });\r\n \r\n \r\n+\r\n app.listen(PORT, () => {\r\n     console.log(`Server is listening on port ${PORT}`);\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742756721986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,11 +28,11 @@\n } catch (error) {\r\n     console.log(\"Error: \", error);\r\n }\r\n \r\n-// defining routes\r\n-app.use(\"/book\", bookRoute);\r\n-app.use(\"/user\", userRoute);\r\n+// // defining routes\r\n+// app.use(\"/book\", bookRoute);\r\n+// app.use(\"/user\", userRoute);\r\n \r\n \r\n \r\n app.listen(PORT, () => {\r\n"
+                },
+                {
+                    "date": 1742756829638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n } catch (error) {\r\n     console.log(\"Error: \", error);\r\n }\r\n \r\n-// // defining routes\r\n+ // defining routes\r\n // app.use(\"/book\", bookRoute);\r\n // app.use(\"/user\", userRoute);\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1742756847668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const app = express();\r\n \r\n app.use(cors());\r\n app.use(express.json());\r\n-app.use ();\r\n+app.use();\r\n \r\n dotenv.config();\r\n \r\n const PORT = process.env.PORT || 4000;\r\n"
+                },
+                {
+                    "date": 1742756953453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n const app = express();\r\n \r\n app.use(cors());\r\n app.use(express.json());\r\n-app.use();\r\n \r\n dotenv.config();\r\n \r\n const PORT = process.env.PORT || 4000;\r\n@@ -29,10 +28,10 @@\n     console.log(\"Error: \", error);\r\n }\r\n \r\n  // defining routes\r\n-// app.use(\"/book\", bookRoute);\r\n-// app.use(\"/user\", userRoute);\r\n+app.use(\"/book\", bookRoute);\r\n+app.use(\"/user\", userRoute);\r\n \r\n \r\n \r\n app.listen(PORT, () => {\r\n"
+                }
+            ],
+            "date": 1729245585716,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport mongoose from \"mongoose\";\r\nimport dotenv from \"dotenv\";\r\nimport cors from \"cors\";\r\n\r\nimport bookRoute from \"./route/book.route.js\";\r\nimport userRoute from \"./route/user.route.js\";\r\n\r\nconst app = express();\r\n\r\napp.use(cors());\r\napp.use(express.json());\r\napp.use ((req, res)=> {\r\n    res.send(\"HEllo\");\r\n});\r\n\r\ndotenv.config();\r\n\r\nconst PORT = process.env.PORT || 4000;\r\n\r\nconst URI = process.env.MongoDBURI;\r\n\r\n// connect to mongoDB\r\ntry {\r\n    mongoose.connect(URI, {\r\n        useNewUrlParser: true,\r\n        useUnifiedTopology: true,\r\n    });\r\n    console.log(\"Connected to mongoDB\");\r\n} catch (error) {\r\n    console.log(\"Error: \", error);\r\n}\r\n\r\n// defining routes\r\napp.use(\"/book\", bookRoute);\r\napp.use(\"/user\", userRoute);\r\n\r\napp.listen(PORT, () => {\r\n    console.log(`Server is listening on port ${PORT}`);\r\n});"
+        }
+    ]
+}

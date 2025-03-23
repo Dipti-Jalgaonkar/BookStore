@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import list from '../../public/list.json'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,9 +8,6 @@ import axios from "axios";
 
 import Cards from "./Cards";
 function Freebook() {
-  const filterData = list.filter((data)=>data.category === "Free");
-  console.log(filterData);
-
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
@@ -75,11 +71,11 @@ function Freebook() {
         </div>
 
         <div>
-        <Slider {...settings}>
-        {filterData.map((item) => (
+          <Slider {...settings}>
+            {book.map((item) => (
               <Cards item={item} key={item.id} />
             ))}
-    </Slider>
+          </Slider>
         </div>
       </div>
     </>

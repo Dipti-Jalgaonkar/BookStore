@@ -1,0 +1,46 @@
+{
+    "sourceFile": "Frontend/src/components/Cards.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1729099786841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1729099929384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <>\r\n       <div className=\"mt-4 my-3 p-3\">\r\n         <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n           <figure>\r\n-            <img src={item.image} alt=\"Shoes\" />\r\n+            <img src=https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183 alt=\"Shoes\" />\r\n           </figure>\r\n           <div className=\"card-body\">\r\n             <h2 className=\"card-title\">\r\n               {item.name}\r\n"
+                },
+                {
+                    "date": 1729099936593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <>\r\n       <div className=\"mt-4 my-3 p-3\">\r\n         <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n           <figure>\r\n-            <img src=https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183 alt=\"Shoes\" />\r\n+            <img src=\"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183\" alt=\"Shoes\" />\r\n           </figure>\r\n           <div className=\"card-body\">\r\n             <h2 className=\"card-title\">\r\n               {item.name}\r\n"
+                },
+                {
+                    "date": 1729099956114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <>\r\n       <div className=\"mt-4 my-3 p-3\">\r\n         <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n           <figure>\r\n-            <img src=\"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183\" alt=\"Shoes\" />\r\n+            <img src=\"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183\" alt=\"Books\" />\r\n           </figure>\r\n           <div className=\"card-body\">\r\n             <h2 className=\"card-title\">\r\n               {item.name}\r\n"
+                },
+                {
+                    "date": 1729099973212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <>\r\n       <div className=\"mt-4 my-3 p-3\">\r\n         <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n           <figure>\r\n-            <img src=\"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183\" alt=\"Books\" />\r\n+            <img src={item.img} alt=\"Books\" />\r\n           </figure>\r\n           <div className=\"card-body\">\r\n             <h2 className=\"card-title\">\r\n               {item.name}\r\n"
+                },
+                {
+                    "date": 1729100024201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <>\r\n       <div className=\"mt-4 my-3 p-3\">\r\n         <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n           <figure>\r\n-            <img src={item.img} alt=\"Books\" />\r\n+            <img src={item.image} alt=\"Books\" />\r\n           </figure>\r\n           <div className=\"card-body\">\r\n             <h2 className=\"card-title\">\r\n               {item.name}\r\n"
+                },
+                {
+                    "date": 1729100134480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <>\r\n       <div className=\"mt-4 my-3 p-3\">\r\n         <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n           <figure>\r\n-            <img src={item.image} alt=\"Books\" />\r\n+            <img src='../hand-drawn-flat-design-stack-books-illustration_23-2149341898.avif' alt=\"Books\" />\r\n           </figure>\r\n           <div className=\"card-body\">\r\n             <h2 className=\"card-title\">\r\n               {item.name}\r\n"
+                },
+                {
+                    "date": 1729100295092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+import React from \"react\";\r\n+\r\n+function Cards({ item }) {\r\n+  console.log(item);\r\n+  return (\r\n+    <>\r\n+      <div className=\"mt-4 my-3 p-3\">\r\n+        <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n+          <figure>\r\n+            <img src={item.image} alt=\"Books\" />\r\n+          </figure>\r\n+          <div className=\"card-body\">\r\n+            <h2 className=\"card-title\">\r\n+              {item.name}\r\n+              <div className=\"badge badge-secondary\">{item.category}</div>\r\n+            </h2>\r\n+            <p>{item.title}</p>\r\n+            <div className=\"card-actions justify-between\">\r\n+              <div className=\"badge badge-outline\">${item.price}</div>\r\n+              <div className=\" cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200\">\r\n+                Buy Now\r\n+              </div>\r\n+            </div>\r\n+          </div>\r\n+        </div>\r\n+      </div>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default Cards;\r\n"
+                }
+            ],
+            "date": 1729099786841,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nfunction Cards({ item }) {\r\n  console.log(item);\r\n  return (\r\n    <>\r\n      <div className=\"mt-4 my-3 p-3\">\r\n        <div className=\"card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border\">\r\n          <figure>\r\n            <img src={item.image} alt=\"Shoes\" />\r\n          </figure>\r\n          <div className=\"card-body\">\r\n            <h2 className=\"card-title\">\r\n              {item.name}\r\n              <div className=\"badge badge-secondary\">{item.category}</div>\r\n            </h2>\r\n            <p>{item.title}</p>\r\n            <div className=\"card-actions justify-between\">\r\n              <div className=\"badge badge-outline\">${item.price}</div>\r\n              <div className=\" cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200\">\r\n                Buy Now\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default Cards;\r\n"
+        }
+    ]
+}

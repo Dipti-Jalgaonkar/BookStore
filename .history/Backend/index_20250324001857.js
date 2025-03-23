@@ -10,6 +10,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use ();
 
 dotenv.config();
 
@@ -28,10 +29,12 @@ try {
     console.log("Error: ", error);
 }
 
- // defining routes
+// defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
-
+app.post("/courseData", async (req, res)=> {
+    const course = await(book.findOne(book));
+    })
 
 
 app.listen(PORT, () => {

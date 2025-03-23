@@ -1,0 +1,54 @@
+[{
+    "id": 1,
+    "name": "Story Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183"
+},
+
+{
+    "id": 2,
+    "name": "Comedy Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+    "price": 20,
+    "category": "Free",
+    "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183"
+},
+
+{
+    "id": 3,
+    "name": "Sports Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183"
+},
+
+{
+    "id": 4,
+    "name": "Horror Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183"
+},
+
+{
+    "id": 5,
+    "name": "Children Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183"
+},
+
+{
+    "id": 6,
+    "name": "Food Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=cb197f5f-ee9b-4ad4-b9d7-550d84abb183"
+}]
+
